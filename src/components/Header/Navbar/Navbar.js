@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 
 //Logo 
-import logo from '../../../assets/images/stork-test_navy.png'
+import logo from '../../../assets/images/tslf logo center with padding.png'
 
 
 function Navbar(props) {
@@ -24,7 +24,7 @@ function Navbar(props) {
                     <div className="header_logo">
                         <Link to={process.env.PUBLIC_URL + "/"}> 
                             <img src={logo} alt="" style={{
-                                height: "80px"
+                                height: "60px"
                             }} />
                         </Link>
                     </div>
