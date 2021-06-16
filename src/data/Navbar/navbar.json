@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "link": "/",
+    "subMenu": [
+      {
+        "id": 1.1,
+        "title": "Home One",
+        "link": "/home"
+      },
+      {
+        "id": 1.2,
+        "title": "Home Two",
+        "link": "/home-two"
+      },
+      {
+        "id": 1.3,
+        "title": "Home Three",
+        "link": "/home-three"
+      },
+      {
+        "id": 1.4,
+        "title": "Landingpage One",
+        "link": "/landingpage-one"
+      },
+      {
+        "id": 1.5,
+        "title": "Landingpage Two",
+        "link": "/landingpage-two"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "About",
+    "link": "/about",
+    "subMenu": false
+  },
+  {
+    "id": 3,
+    "title": "Services",
+    "link": "/service",
+    "subMenu": [
+      {
+        "title": "Business Growth",
+        "link": "/service/business-growth?id=1"
+      },
+      {
+        "title": "Advanced Analtic",
+        "link": "/service/advanced-analtic?id=2"
+      },
+      {
+        "title": "Express Delivery",
+        "link": "/service/express-delivery?id=3"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Gallery",
+    "link": "/gallery",
+    "subMenu": false
+  },
+  {
+    "id": 5,
+    "title": "Blog",
+    "link": "/blog",
+    "subMenu": [
+      {
+        "title": "Blog Page",
+        "link": "/blog"
+      },
+      {
+        "title": "Single Blog",
+        "link": "/blog/new-business-strategy?id=1"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Team",
+    "link": "/team"
+  },
+  {
+    "id": 7,
+    "title": "Contact",
+    "link": "/contact"
+  }
+]

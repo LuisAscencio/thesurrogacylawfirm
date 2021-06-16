@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1, 
+    "title": "We are <span> alizah</span><br> Business co.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dapibus enim sit amet pellentesque imperdiet nibh tortor fringilla tortor eu sodales leo augue eget justo.",
+    "bg": "slider5.jpg" 
+  },
+  {
+    "id": 2, 
+    "title": "We are <span> alizah</span><br> Business co.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dapibus enim sit amet pellentesque imperdiet nibh tortor fringilla tortor eu sodales leo augue eget justo. ",
+    "bg": "slider7.jpg"
+  } 
+ 
+]

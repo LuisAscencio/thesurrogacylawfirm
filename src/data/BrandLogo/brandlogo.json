@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "logoSrc": "client-1.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 2,
+    "logoSrc": "client-4.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 3,
+    "logoSrc": "client-2.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 4,
+    "logoSrc": "client-3.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 5,
+    "logoSrc": "client-1.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 6,
+    "logoSrc": "client-5.jpg",
+    "URL": "/"
+  },
+  {
+    "id": 7,
+    "logoSrc": "client-3.jpg",
+    "URL": "/"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1, 
+    "title": "<span>We are  </span>alizah <br> Business co.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dapibus enim sit amet pellentesque imperdiet nibh tortor fringilla tortor eu sodales leo augue eget justo. ",
+    "bg": "slider1.jpg",
+    "btnText": "Get A Quote",
+    "btnLink": "/contact"
+  },
+  {
+    "id": 2, 
+    "title": "<span>We are  </span>alizah <br> Business co.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dapibus enim sit amet pellentesque imperdiet nibh tortor fringilla tortor eu sodales leo augue eget justo. ",
+    "bg": "slider2.jpg",
+    "btnText": "Contact Us",
+    "btnLink": "/contact"
+  } 
+ 
+]
