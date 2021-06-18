@@ -52,22 +52,22 @@ function App() {
             path={`${process.env.PUBLIC_URL + "/about"}`}
             component={About}
           />
-          <Route exact path={`${process.env.PUBLIC_URL + '/service'}`}
+          <Route exact path={`${process.env.PUBLIC_URL + '/whatwedo'}`}
             component={Service}
           />
-          <Route path={`${process.env.PUBLIC_URL + '/service/:serviceIDD'}`}
+          <Route path={`${process.env.PUBLIC_URL + '/whatwedo/:serviceIDD'}`}
             component={SingleService}
           />
-          <Route path={`${process.env.PUBLIC_URL + '/gallery/:galleryID'}`}
+          {/* <Route path={`${process.env.PUBLIC_URL + '/gallery/:galleryID'}`}
             component={SingleGallery}
-          />
+          /> */}
           <Route path={`${process.env.PUBLIC_URL + '/blog/:blogID'}`}
             component={SingleBlog}
           />
-          <Route
+          {/* <Route
             path={`${process.env.PUBLIC_URL + "/gallery"}`}
             component={Gallery}
-          />
+          /> */}
           <Route
             path={`${process.env.PUBLIC_URL + "/contact"}`}
             component={Contact}

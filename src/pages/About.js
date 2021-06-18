@@ -12,7 +12,7 @@ const Aboutpage = () => {
     return(
         <Fragment>
             <MetaTags>
-              <title>The Surrogacy Law Firm | About</title>
+              <title>The Surrogacy Law Firm | About Jill</title>
               <meta
                 name="description"
                 content="About page of The Surrogacy Law Firm"
@@ -23,12 +23,12 @@ const Aboutpage = () => {
             
                 <PageHeader
                     bgImg={require('../assets/images/banneraboutus.jpg')}
-                    title="About Us" 
+                    title="About Jill" 
                 />
 
                 <About /> 
-                <Skill /> 
-                <Team /> 
+                {/* <Skill />  */}
+                {/* <Team />  */}
         
             </LayoutOne>
         </Fragment>

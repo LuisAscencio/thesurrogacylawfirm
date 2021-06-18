@@ -26,7 +26,7 @@ const ServiceContentWrap = ({service}) => {
                         {
                             ServicesData.slice(0,7).map((serviceItem,id)=>(
                                 <LI key={id}><i className="fa fa-angle-right"></i>
-                                    <Link to={`${process.env.PUBLIC_URL + `/service/${serviceItem.title.split(' ').join('-').toLowerCase()}?id=${serviceItem.id}`}`}>
+                                    <Link to={`${process.env.PUBLIC_URL + `/whatwedo/${serviceItem.title.split(' ').join('-').toLowerCase()}?id=${serviceItem.id}`}`}>
                                         {serviceItem.title}
                                     </Link>
                                 </LI>

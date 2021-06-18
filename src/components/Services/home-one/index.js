@@ -41,7 +41,7 @@ const Service = () => {
             <div className="container"> 
                 {/* Heading */}
                 <SectionTitle
-                    title="Our Services" 
+                    title="What We Do" 
                 />
                 {/* End: Heading */}
 

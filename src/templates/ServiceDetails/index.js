@@ -14,7 +14,7 @@ const ServiceDetails = () => {
 		<Fragment>
 
 			<PageHeader
-				bgImg={require('../../assets/images/page_bg.jpg')}
+				bgImg={require('../../assets/images/banneraboutus.jpg')}
 				title={service.title}
 			/>
 
@@ -25,7 +25,7 @@ const ServiceDetails = () => {
 				/>
 			</PageWrapper>
 
-			<RelatedServices />
+			{/* <RelatedServices /> */}
 
 
 		</Fragment>

@@ -7,35 +7,42 @@
   },
   {
     "id": 2,
-    "title": "About",
+    "title": "About Jill",
     "link": "/about",
     "subMenu": false
   },
   {
     "id": 3,
-    "title": "Services",
-    "link": "/service",
+    "title": "What We Do",
+    "link": "/whatwedo",
     "subMenu": [
       {
-        "title": "Business Growth",
-        "link": "/service/business-growth?id=1"
+        "title": "Surrogacy Law",
+        "link": "/whatwedo/surrogacy-law?id=1"
       },
       {
-        "title": "Advanced Analtic",
-        "link": "/service/advanced-analtic?id=2"
+        "title": "Egg Donation Law",
+        "link": "/whatwedo/egg-donation-law?id=2"
       },
       {
-        "title": "Express Delivery",
-        "link": "/service/express-delivery?id=3"
+        "title": "Sperm Donation Law",
+        "link": "/whatwedo/sperm-donation-law?id=3"
+      },
+      {
+        "title": "LGBT Families",
+        "link": "/whatwedo/lgbt-families?id=4"
+      },
+      {
+        "title": "Parental Rights",
+        "link": "/whatwedo/parental-rights?id=5"
+      },
+      {
+        "title": "Worldwide Services",
+        "link": "/whatwedo/worldwide-services?id=6"
       }
     ]
   },
-  {
-    "id": 4,
-    "title": "Gallery",
-    "link": "/gallery",
-    "subMenu": false
-  },
+
   {
     "id": 5,
     "title": "Blog",
