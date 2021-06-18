@@ -4,7 +4,7 @@ import SectionTitle from "../../SectionTitles/SectionTitle";
 import AboutData from "../../../data/About/about-one";
 
 // About Image
-import aboutImg from '../../../assets/images/about.png'
+import aboutImg from '../../../assets/images/babyhands.jpg'
 
 const AboutContent = () => {
 
@@ -17,7 +17,7 @@ const AboutContent = () => {
                     <div className="about_list">
                         {/* Start: Heading */}
                         <SectionTitle 
-                        title=" Welcome to Elizah "  
+                        title=" Welcome to The Surrogacy Law Firm "  
                         />
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Sed dapibus enim sit amet pellentesque imperdiet nibh tortor fringilla tortor eu sodales leo augue eget justo. Phasellus id lectus id metus ornare sempereget vulputate urnorbi venenatis, ex a sollicitudin semper sed dapibus enim sit amet pellen tesque imperdiet nibh tortor fringilla tortor </p>
                      </div>

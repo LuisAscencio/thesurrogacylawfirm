@@ -12,17 +12,17 @@ const Aboutpage = () => {
     return(
         <Fragment>
             <MetaTags>
-              <title>Elizah | About</title>
+              <title>The Surrogacy Law Firm | About</title>
               <meta
                 name="description"
-                content="Multipage Business  React JS Template."
+                content="About page of The Surrogacy Law Firm"
               />
             </MetaTags>
 
             <LayoutOne>
             
                 <PageHeader
-                    bgImg={require('../assets/images/page_bg.jpg')}
+                    bgImg={require('../assets/images/banneraboutus.jpg')}
                     title="About Us" 
                 />
 

@@ -3,33 +3,7 @@
     "id": 1,
     "title": "Home",
     "link": "/",
-    "subMenu": [
-      {
-        "id": 1.1,
-        "title": "Home One",
-        "link": "/home"
-      },
-      {
-        "id": 1.2,
-        "title": "Home Two",
-        "link": "/home-two"
-      },
-      {
-        "id": 1.3,
-        "title": "Home Three",
-        "link": "/home-three"
-      },
-      {
-        "id": 1.4,
-        "title": "Landingpage One",
-        "link": "/landingpage-one"
-      },
-      {
-        "id": 1.5,
-        "title": "Landingpage Two",
-        "link": "/landingpage-two"
-      }
-    ]
+    "subMenu": false
   },
   {
     "id": 2,

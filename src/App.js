@@ -32,7 +32,7 @@ function App() {
             path={`${process.env.PUBLIC_URL + "/home"}`}
             component={Home}
           />
-          <Route
+          {/* <Route
             path={`${process.env.PUBLIC_URL + "/home-two"}`}
             component={HomeTwo}
           />
@@ -47,7 +47,7 @@ function App() {
           <Route
             path={`${process.env.PUBLIC_URL + "/landingpage-two"}`}
             component={LandingPageTwo}
-          />
+          /> */}
           <Route
             path={`${process.env.PUBLIC_URL + "/about"}`}
             component={About}

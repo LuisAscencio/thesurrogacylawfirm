@@ -1,14 +1,14 @@
 [
     {
       "id": 1,
-      "title": "Business Develop",
+      "title": "Surrogacy Law",
       "text": "Loren ipsum dolor sitamet adipiscing elit sed do eiusmod ameth lectus id metus ornare sempereget",
-      "icon": "icon_group"
+      "icon": "icon_heart"
     },
     {
       "id": 2,
-      "title": "Creative Work",
+      "title": "Egg Donation Law",
       "text": "Loren ipsum dolor sitamet adipiscing elit sed do eiusmod ameth lectus id metus ornare sempereget",
-      "icon": "icon_cog"
+      "icon": "icon_ribbon"
     }
   ]
