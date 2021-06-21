@@ -45,23 +45,15 @@
 
   {
     "id": 5,
-    "title": "Blog",
-    "link": "/blog",
-    "subMenu": [
-      {
-        "title": "Blog Page",
-        "link": "/blog"
-      },
-      {
-        "title": "Single Blog",
-        "link": "/blog/new-business-strategy?id=1"
-      }
-    ]
+    "title": "Free Consultation FAQ's",
+    "link": "/freeconsultation",
+    "subMenu": false
+    
   },
   {
     "id": 6,
-    "title": "Team",
-    "link": "/team"
+    "title": "Surrogacy FAQ's",
+    "link": "/surrogacyfaqs"
   },
   {
     "id": 7,

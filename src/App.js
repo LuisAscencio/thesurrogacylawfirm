@@ -73,11 +73,11 @@ function App() {
             component={Contact}
           />
           <Route
-            path={`${process.env.PUBLIC_URL + "/team"}`}
+            path={`${process.env.PUBLIC_URL + "/surrogacyfaqs"}`}
             component={Team}
           />
           <Route
-            path={`${process.env.PUBLIC_URL + "/blog"}`}
+            path={`${process.env.PUBLIC_URL + "/freeconsultation"}`}
             component={Blog}
           />
           <Route exact component={NotFound} />

@@ -11,7 +11,7 @@ const servicePage = () => {
 	return (
 	  <Fragment>
 		<MetaTags>
-		  <title>Elizah | Home</title>
+		  <title>The Surrogacy Law Firm | Home</title>
 		  <meta
 			name="description"
 			content="Multipage Business  React JS Template."

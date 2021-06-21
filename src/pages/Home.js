@@ -31,15 +31,15 @@ const Home = () => {
         <Slider />
         <About />
         <Services />
-        <WhyChooseUs />
-        <Video />
-        <Funfact />
-        <Gallery />
-        <Team />
+        {/* <WhyChooseUs /> */}
+        {/* <Video /> */}
+        {/* <Funfact /> */}
+        {/* <Gallery /> */}
+        {/* <Team />
         <PricingTable />
         <Blog />
         <Testimonial />
-        <LogoContainer />
+        <LogoContainer /> */}
         <ContactForm />
 
       </LayoutOne>
