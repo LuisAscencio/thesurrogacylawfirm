@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import NavbarItem from '../Header/Navbar/NavbarItem' 
+import logo from '../../assets/images/tslf logo center with padding.png'
 
 const MobileMenu = () => {
   useEffect(() => {
@@ -65,11 +66,13 @@ const MobileMenu = () => {
 
           {/* Search Form */}
           <div className="offcanvasMobileSearchArea">
-            <form action="#">
-              <input type="search" placeholder="Search ..." />
-              <button type="submit"> 
-              </button>
-            </form>
+          <div className="header_logo">
+                        <Link to={process.env.PUBLIC_URL + "/"}> 
+                            <img src={logo} alt="" style={{
+                                height: "50px"
+                            }} />
+                        </Link>
+                    </div>
           </div>
 
           {/* Contact Info  */} 
@@ -77,13 +80,13 @@ const MobileMenu = () => {
           <div className="header_top_right list-unstyled">
             <ul>
               <li>
-              <i className="fa fa-phone"></i> +234 567 234 875
+              <i className="fa fa-phone"></i> +000 000 000 000
               </li>
               <li>
-              <i className="fa fa-envelope"></i> info@yourdomain.com
+              <i className="fa fa-envelope"></i> surrogacylaw@gmail.com
               </li>
               <li>
-              <i className="fa fa-globe"></i> 1st Avenue, Boston
+              <i className="fa fa-globe"></i> New York, New York
               </li>
             </ul>
           </div>
@@ -97,12 +100,12 @@ const MobileMenu = () => {
                 <li>
                     <Link to="#/" className="fa fa-twitter"></Link>
                 </li>
-                <li>
+                {/* <li>
                     <Link to="#/" className="fa fa-linkedin"></Link>
                 </li>
                 <li>
                     <Link to="#/" className="fa fa-google-plus"></Link>
-                </li>
+                </li> */}
             </ul>
           </div>
 
