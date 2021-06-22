@@ -6,7 +6,7 @@ import Nav from "react-bootstrap/Nav";
 import Accordion from "react-bootstrap/Accordion";
 import Card from 'react-bootstrap/Card';
 
-import GalleryData from '../../data/Gallery/gallery'
+import FaosData from '../../data/Faos/faos.json'
 
 const GalleryContent  = ({classes}) => {
      
@@ -27,11 +27,11 @@ const GalleryContent  = ({classes}) => {
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="office">Free Consultation FAQ's</Nav.Link>
+                                    <Nav.Link eventKey="consultation">Free Consultation FAQ's</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="pool">Surrogacy FAQ's</Nav.Link>
+                                    <Nav.Link eventKey="surrogacy">Surrogacy FAQ's</Nav.Link>
                                 </Nav.Item>
 
                                 {/* <Nav.Item>
@@ -47,28 +47,22 @@ const GalleryContent  = ({classes}) => {
                                 <Tab.Pane eventKey="all">  
 
                                     { 
-                                        GalleryData.reverse().slice(0, 8).map((gallery, i) => ( 
+                                        FaosData.reverse().slice(0, 8).map((fao, i) => ( 
                                             <div className=" projects-list" key={i}>
-                                                {/* <div className="single-project-item" style={{
-                                                backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
-                                                }}> */}
+                                               
                                                                  <Accordion defaultActiveKey="Accordion" >
                                                                     <Card>
                                                                         <Accordion.Toggle as={Card.Header} eventKey="0">
-                                                                        Click me!
+                                                                       {fao.title}
+                                                                       {fao.secction}
                                                                         </Accordion.Toggle>
                                                                         <Accordion.Collapse eventKey="0">
-                                                                        <Card.Body>Hello! I'm the body</Card.Body>
+                                                                        <Card.Body>{fao.resp}</Card.Body>
                                                                         </Accordion.Collapse>
                                                                     </Card>
                                                                   
                                                                 </Accordion>
-                                                    {/* <div className="project-hover"> 
-                                                        <h4><Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`}>{gallery.title}</Link></h4>
-                                                        <span>{gallery.tag}</span>
-                                                        <Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`} className="project-link"><i className="icon_link"></i></Link>
-                                                    </div>
-                                                </div>  */}
+                                                
                                             </div>
                                         ))
                                     } 
@@ -76,9 +70,53 @@ const GalleryContent  = ({classes}) => {
                                 </Tab.Pane>
 
 
-                                <Tab.Pane eventKey="office">
+                                <Tab.Pane eventKey="consultation">
+                                { 
+                                        FaosData.reverse().slice(0, 8).map((fao, i) => ( 
+                                          fao.secction==="Free Consultation FAQ's" ?   <div className=" projects-list" key={i}>
+                                               
+                                          <Accordion defaultActiveKey="Accordion" >
+                                             <Card>
+                                                 <Accordion.Toggle as={Card.Header} eventKey="0">
+                                                {fao.title}
+                                                 </Accordion.Toggle>
+                                                 <Accordion.Collapse eventKey="0">
+                                                 <Card.Body>{fao.resp}</Card.Body>
+                                                 </Accordion.Collapse>
+                                             </Card>
+                                           
+                                         </Accordion>
+                         
+                     </div> : null 
+                                        ))
+                                    } 
+                                </Tab.Pane>
+
+                                <Tab.Pane eventKey="surrogacy">
+                                { 
+                                        FaosData.reverse().slice(0, 8).map((fao, i) => ( 
+                                            fao.secction==="Surrogacy FAQ's" ?   <div className=" projects-list" key={i}>
+                                               
+                                            <Accordion defaultActiveKey="Accordion" >
+                                               <Card>
+                                                   <Accordion.Toggle as={Card.Header} eventKey="0">
+                                                  {fao.title}
+                                                   </Accordion.Toggle>
+                                                   <Accordion.Collapse eventKey="0">
+                                                   <Card.Body>{fao.resp}</Card.Body>
+                                                   </Accordion.Collapse>
+                                               </Card>
+                                             
+                                           </Accordion>
+                           
+                       </div> : null 
+                                        ))
+                                    } 
+                                </Tab.Pane>
+
+                                {/* <Tab.Pane eventKey="carpet">
                                     { 
-                                    GalleryData.reverse().slice(0, 4).map((gallery, i) => ( 
+                                    FaosData.reverse().slice(0, 8).map((gallery, i) => ( 
                                         <div className="col-md-3 col-sm-12" key={i}>
                                             <div className="single-project-item" style={{
                                             backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
@@ -94,9 +132,9 @@ const GalleryContent  = ({classes}) => {
                                     } 
                                 </Tab.Pane>
 
-                                <Tab.Pane eventKey="house">
+                                <Tab.Pane eventKey="surrogacy">
                                     { 
-                                    GalleryData.reverse().slice(0, 6).map((gallery, i) => ( 
+                                    FaosData.reverse().slice(0, 4).map((gallery, i) => ( 
                                         <div className="col-md-3 col-sm-12" key={i}>
                                             <div className="single-project-item" style={{
                                             backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
@@ -110,43 +148,7 @@ const GalleryContent  = ({classes}) => {
                                         </div>
                                     ))
                                     } 
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="carpet">
-                                    { 
-                                    GalleryData.reverse().slice(0, 8).map((gallery, i) => ( 
-                                        <div className="col-md-3 col-sm-12" key={i}>
-                                            <div className="single-project-item" style={{
-                                            backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
-                                            }}>
-                                                <div className="project-hover"> 
-                                                    <h4><Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`}>{gallery.title}</Link></h4>
-                                                    <span>{gallery.tag}</span>
-                                                    <Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`} className="project-link"><i className="icon_link"></i></Link>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    ))
-                                    } 
-                                </Tab.Pane>
-
-                                <Tab.Pane eventKey="pool">
-                                    { 
-                                    GalleryData.reverse().slice(0, 4).map((gallery, i) => ( 
-                                        <div className="col-md-3 col-sm-12" key={i}>
-                                            <div className="single-project-item" style={{
-                                            backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
-                                            }}>
-                                                <div className="project-hover"> 
-                                                    <h4><Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`}>{gallery.title}</Link></h4>
-                                                    <span>{gallery.tag}</span>
-                                                    <Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`} className="project-link"><i className="icon_link"></i></Link>
-                                                </div>
-                                            </div> 
-                                        </div>
-                                    ))
-                                    } 
-                                </Tab.Pane>
+                                </Tab.Pane> */}
 
 
 

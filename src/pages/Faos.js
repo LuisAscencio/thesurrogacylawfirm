@@ -20,7 +20,7 @@ const galleryPage = () => {
 				title="Free Consultation FAQ's" 
 			/>
 
-			<Gallery classes="work_page" />
+			<Gallery classes="work_page"/>
 			
 		</LayoutOne>
 	  </Fragment>

@@ -8,7 +8,7 @@ import LandingPageOne from "./pages/LandingPageOne";
 import LandingPageTwo from "./pages/LandingPageTwo";
 import Service from "./pages/Service";
 import SingleService from "./pages/SingleService";
-import Gallery from "./pages/Gallery";
+import Faos from "./pages/Faos";
 import SingleGallery from "./pages/SingleGallery";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
@@ -72,13 +72,13 @@ function App() {
             path={`${process.env.PUBLIC_URL + "/contact"}`}
             component={Contact}
           />
-          <Route
+          {/* <Route
             path={`${process.env.PUBLIC_URL + "/surrogacyfaqs"}`}
             component={Team}
-          />
+          /> */}
           <Route
             path={`${process.env.PUBLIC_URL + "/faqs"}`}
-            component={Gallery}
+            component={Faos}
           />
           <Route exact component={NotFound} />
 
