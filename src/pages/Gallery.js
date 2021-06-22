@@ -8,16 +8,16 @@ const galleryPage = () => {
 	return (
 	  <Fragment>
 		<MetaTags>
-		  <title>Elizah | Home</title>
+		  <title>The Surrogacy Law Firm | Free Consultation FAQ's</title>
 		  <meta
 			name="description"
-			content="Multipage Business  React JS Template."
+			content="Free Consultation FAQ's"
 		  />
 		</MetaTags>
 		<LayoutOne>
 			<PageHeader
-				bgImg={require('../assets/images/page_bg.jpg')}
-				title="Our Gallery" 
+				bgImg={require('../assets/images//banneraboutus.jpg')}
+				title="Free Consultation FAQ's" 
 			/>
 
 			<Gallery classes="work_page" />

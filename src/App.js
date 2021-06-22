@@ -16,7 +16,7 @@ import SingleBlog from "./pages/SingleBlog";
 import Blog from "./pages/Blog";
 import About from "./pages/About";
 import NotFound from "./pages/NotFound";
-
+import moduleName from 'module'
 
 function App() {
   return (
@@ -77,8 +77,8 @@ function App() {
             component={Team}
           />
           <Route
-            path={`${process.env.PUBLIC_URL + "/freeconsultation"}`}
-            component={Blog}
+            path={`${process.env.PUBLIC_URL + "/faqs"}`}
+            component={Gallery}
           />
           <Route exact component={NotFound} />
 

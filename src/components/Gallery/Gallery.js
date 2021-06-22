@@ -3,6 +3,9 @@ import {Link} from 'react-router-dom';
 import SectionTitle from "../SectionTitles/SectionTitle";
 import Tab from "react-bootstrap/Tab";
 import Nav from "react-bootstrap/Nav";
+import Accordion from "react-bootstrap/Accordion";
+import Card from 'react-bootstrap/Card';
+
 import GalleryData from '../../data/Gallery/gallery'
 
 const GalleryContent  = ({classes}) => {
@@ -12,7 +15,7 @@ const GalleryContent  = ({classes}) => {
                 <div className="container">
                     {/* Heading */}
 					<SectionTitle
-						title="Latest project" 
+						title="FAQ's" 
 					/>
 					{/* End: Heading */}
                     <div className="projects-list">  
@@ -20,24 +23,24 @@ const GalleryContent  = ({classes}) => {
                         <Tab.Container defaultActiveKey="all">
                             <Nav variant="pills" className="acount__nav justify-content-center nav nav-pills">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="all">all projects</Nav.Link>
+                                    <Nav.Link eventKey="all">All FAQ's</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="office">Marketing</Nav.Link>
+                                    <Nav.Link eventKey="office">Free Consultation FAQ's</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
-                                    <Nav.Link eventKey="pool">Development</Nav.Link>
+                                    <Nav.Link eventKey="pool">Surrogacy FAQ's</Nav.Link>
                                 </Nav.Item>
 
-                                <Nav.Item>
+                                {/* <Nav.Item>
                                     <Nav.Link eventKey="carpet">Digital</Nav.Link>
                                 </Nav.Item>
 
                                 <Nav.Item>
                                     <Nav.Link eventKey="house">Communication</Nav.Link>
-                                </Nav.Item>
+                                </Nav.Item> */}
                             </Nav>
 
                             <Tab.Content>
@@ -45,16 +48,27 @@ const GalleryContent  = ({classes}) => {
 
                                     { 
                                         GalleryData.reverse().slice(0, 8).map((gallery, i) => ( 
-                                            <div className="col-md-3 col-sm-12" key={i}>
-                                                <div className="single-project-item" style={{
+                                            <div className=" projects-list" key={i}>
+                                                {/* <div className="single-project-item" style={{
                                                 backgroundImage: `url(${require('../../assets/images/' + gallery.thumb)})`
-                                                }}>
-                                                    <div className="project-hover"> 
+                                                }}> */}
+                                                                 <Accordion defaultActiveKey="Accordion" >
+                                                                    <Card>
+                                                                        <Accordion.Toggle as={Card.Header} eventKey="0">
+                                                                        Click me!
+                                                                        </Accordion.Toggle>
+                                                                        <Accordion.Collapse eventKey="0">
+                                                                        <Card.Body>Hello! I'm the body</Card.Body>
+                                                                        </Accordion.Collapse>
+                                                                    </Card>
+                                                                  
+                                                                </Accordion>
+                                                    {/* <div className="project-hover"> 
                                                         <h4><Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`}>{gallery.title}</Link></h4>
                                                         <span>{gallery.tag}</span>
                                                         <Link to={`${process.env.PUBLIC_URL + `/gallery/${gallery.title.split(' ').join('-').toLowerCase()}?id=${gallery.id} `}`} className="project-link"><i className="icon_link"></i></Link>
                                                     </div>
-                                                </div> 
+                                                </div>  */}
                                             </div>
                                         ))
                                     } 

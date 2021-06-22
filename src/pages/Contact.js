@@ -10,16 +10,16 @@ const ContactPage = () => {
 
         <Fragment>
             <MetaTags>
-              <title>Elizah | Contact Us</title>
+              <title>The Surrogacy Law Frim| Contact Us</title>
               <meta
                 name="description"
-                content="Multipage Business  React JS Template."
+                content="MThe Surrogacy Law Frim Contact Us page"
               />
             </MetaTags>
 
             <LayoutOne>
               <PageHeader
-                bgImg={require('../assets/images/page_bg.jpg')}
+                bgImg={require('../assets/images/banneraboutus.jpg')}
                 title="Contact Us" 
               />
               

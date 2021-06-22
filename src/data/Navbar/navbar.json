@@ -45,16 +45,12 @@
 
   {
     "id": 5,
-    "title": "Free Consultation FAQ's",
-    "link": "/freeconsultation",
+    "title": "FAQ's",
+    "link": "/faqs",
     "subMenu": false
     
   },
-  {
-    "id": 6,
-    "title": "Surrogacy FAQ's",
-    "link": "/surrogacyfaqs"
-  },
+
   {
     "id": 7,
     "title": "Contact",
