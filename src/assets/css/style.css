@@ -42,6 +42,13 @@ Primary use: Corporate, Business and Portfolio
 ------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,600,700");
 
+.faos {
+  color: #101a40;
+}
+.faos :hover {
+  color: #b89841;
+}
+
 body {
   font-size: 14px;
   font-family: "Open Sans", sans-serif;

@@ -19,7 +19,7 @@ const ContactPage = () => {
 
             <LayoutOne>
               <PageHeader
-                bgImg={require('../assets/images/banneraboutus.jpg')}
+                bgImg={require('../assets/images/bannerhorizontal3.jpg')}
                 title="Contact Us" 
               />
               

@@ -20,7 +20,7 @@ const servicePage = () => {
 			<LayoutOne>
 				<div className="service-page">
 					<PageHeader
-						bgImg={require('../assets/images/page_bg.jpg')}
+						bgImg={require('../assets/images/bannerhorizontal2.jpg')}
 						title="Our Services"
 					/>
 					<Services />

@@ -16,7 +16,7 @@ const galleryPage = () => {
 		</MetaTags>
 		<LayoutOne>
 			<PageHeader
-				bgImg={require('../assets/images//banneraboutus.jpg')}
+				bgImg={require('../assets/images/bannerhorizontal4.jpg')}
 				title="Free Consultation FAQ's" 
 			/>
 

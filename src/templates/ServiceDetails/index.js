@@ -14,7 +14,7 @@ const ServiceDetails = () => {
 		<Fragment>
 
 			<PageHeader
-				bgImg={require('../../assets/images/banneraboutus.jpg')}
+				bgImg={require('../../assets/images/bannerhorizontal2.jpg')}
 				title={service.title}
 			/>
 

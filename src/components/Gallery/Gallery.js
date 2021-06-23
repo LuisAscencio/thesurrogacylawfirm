@@ -48,10 +48,11 @@ const GalleryContent  = ({classes}) => {
 
                                     { 
                                         FaosData.reverse().slice(0, 8).map((fao, i) => ( 
-                                            <div className=" projects-list" key={i}>
+                                            <div className="projects-list" key={i} >
                                                
-                                                                 <Accordion defaultActiveKey="Accordion" >
-                                                                    <Card>
+                                                                 <Accordion defaultActiveKey="Accordion"  >
+                                                                     
+                                                                    <Card className="faos">
                                                                         <Accordion.Toggle as={Card.Header} eventKey="0">
                                                                        {fao.title}
                                                                        {fao.secction}
@@ -76,7 +77,7 @@ const GalleryContent  = ({classes}) => {
                                           fao.secction==="Free Consultation FAQ's" ?   <div className=" projects-list" key={i}>
                                                
                                           <Accordion defaultActiveKey="Accordion" >
-                                             <Card>
+                                             <Card className="faos">
                                                  <Accordion.Toggle as={Card.Header} eventKey="0">
                                                 {fao.title}
                                                  </Accordion.Toggle>
@@ -98,7 +99,7 @@ const GalleryContent  = ({classes}) => {
                                             fao.secction==="Surrogacy FAQ's" ?   <div className=" projects-list" key={i}>
                                                
                                             <Accordion defaultActiveKey="Accordion" >
-                                               <Card>
+                                               <Card className="faos">
                                                    <Accordion.Toggle as={Card.Header} eventKey="0">
                                                   {fao.title}
                                                    </Accordion.Toggle>

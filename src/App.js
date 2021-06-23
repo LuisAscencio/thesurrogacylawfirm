@@ -61,9 +61,9 @@ function App() {
           {/* <Route path={`${process.env.PUBLIC_URL + '/gallery/:galleryID'}`}
             component={SingleGallery}
           /> */}
-          <Route path={`${process.env.PUBLIC_URL + '/blog/:blogID'}`}
+          {/* <Route path={`${process.env.PUBLIC_URL + '/blog/:blogID'}`}
             component={SingleBlog}
-          />
+          /> */}
           {/* <Route
             path={`${process.env.PUBLIC_URL + "/gallery"}`}
             component={Gallery}
