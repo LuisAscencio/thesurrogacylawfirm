@@ -12,8 +12,8 @@ const Header = () => {
                 <div className="colm">
                     <div className="header_wrapper_1">
                         <ul>
-                            <li><i className="icon_phone"></i> 000 000 000</li>
-                            <li> <i className="icon_mail_alt"></i>thesurrogacylawfirm@gmail.com</li>
+                            <li style={{ fontFamily:'Bebas Neue',  }}><i className="icon_phone"></i> 000 000 000</li>
+                            <li style={{ fontFamily:'Bebas Neue', }}> <i className="icon_mail_alt"></i>surrogacylawfirm@gmail.com</li>
                         </ul>
                     </div>
                 </div>
