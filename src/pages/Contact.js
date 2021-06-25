@@ -10,10 +10,10 @@ const ContactPage = () => {
 
         <Fragment>
             <MetaTags>
-              <title>The Surrogacy Law Frim| Contact Us</title>
+              <title>The Surrogacy Law Frim | Contact Us</title>
               <meta
                 name="description"
-                content="MThe Surrogacy Law Frim Contact Us page"
+                content="The Surrogacy Law Frim Contact Us page"
               />
             </MetaTags>
 

@@ -1,6 +1,9 @@
 import React,{Component} from 'react'; 
+import emailjs from 'emailjs-com';
+ const SERVICE_ID= process.env.REACT_APP_SERVICE_ID;
+ const TEMPLATE_ID= process.env.REACT_APP_TEMPLATE_ID;
+ const USER_ID= process.env.REACT_APP_USER_ID;
 
- 
 class ContactForm extends Component{
 
     constructor(){
@@ -47,10 +50,30 @@ class ContactForm extends Component{
             this.setState({message_err: ''});
       }
 
-      handleSubmit1()
+      sendEmail(e){
+        e.preventDefault();
+
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, "#contactForm", USER_ID)
+      .then((result) => {
+          console.log("yesyy", result.text);
+          window.location.reload()
+      }, (error) => {
+          console.log("noo", error.text);
+          console.log(SERVICE_ID)
+          console.log(TEMPLATE_ID)
+          console.log(USER_ID)
+          window.location.reload()
+      });
+     
+      }
+
+
+
+      handleSubmit1(e)
       {
           if(this.state.name === '') 
               this.setState({name_err: 'Required Field'});
+             
           if(this.state.email === '')
               this.setState({email_err: 'Required Field'});
           if(this.state.subject === '')
@@ -65,6 +88,8 @@ class ContactForm extends Component{
              else
              {
                 this.setState({return_msg: 'Success.', flag: true});
+                this.sendEmail(e)
+               
              }
       }
     render(){
@@ -79,30 +104,30 @@ class ContactForm extends Component{
                         </div>
                     : null}
               </div> 
-              <form method="post" id="contactForm">
+              <form method="post" id="contactForm" onSubmit={this.handleSubmit1}>
                   <div className="row">
                   <div className="col-md-6 col-sm-12">
                       <div className="input-group"> 
-                          <input type="text" id="name" value={this.state.name} onChange={this.handleChangeName} className="form-control" placeholder="Full Name:" /> 
+                          <input type="text" id="name"  value={this.state.name} name="from_name" onChange={this.handleChangeName} className="form-control" placeholder="Full Name:" /> 
                           <span id="err">{this.state.name_err}</span>
                       </div>
                       <div className="input-group"> 
-                          <input type="text" className="form-control" value={this.state.email} onChange={this.handleChangeEmail} id="email" placeholder="Email:" />
+                          <input type="text" className="form-control" value={this.state.email}name="from_email" onChange={this.handleChangeEmail} id="email" placeholder="Email:" />
                           <span id="err">{this.state.email_err}</span>
                       </div>                            
                       <div className="input-group"> 
-                          <input type="text" id="tel" value={this.state.subject} onChange={this.handleChangeSubject} className="form-control" placeholder="Number:" />
+                          <input type="text" id="tel" value={this.state.subject} name="from_phone"  onChange={this.handleChangeSubject} className="form-control" placeholder="Number:" />
                           <span id="err">{this.state.subject_err}</span>
                       </div> 
                   </div> 
                   <div className="form-group col-md-6 col-sm-12">
                       <div className="input-group input_group_full_width"> 
-                          <textarea name="comments" id="message" value={this.state.message} onChange={this.handleChangeMessage} rows="6" className="form-control" placeholder="Message"></textarea>
+                          <textarea name="comments" id="message"  value={this.state.message} name= "message" onChange={this.handleChangeMessage} rows="6" className="form-control" placeholder="Message"></textarea>
                           <span id="err">{this.state.message_err}</span>
                       </div> 
                   </div> 
                   <div className="col-sm-12">
-                    <button type="button" name="send" onClick={this.handleSubmit1} className="submit-button btn btn-chos" value="Submit">Submit</button>
+                    <button type="button" name="send" onClick={this.handleSubmit1} className="submit-button btn btn-chos" >Send Message</button>
                     <div id="simple-msg"></div>
                   </div>
    
